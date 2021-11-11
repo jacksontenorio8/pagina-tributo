@@ -4,40 +4,58 @@
 - Página de Homenagem a Nicolas Tesla
 -->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" id="main">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikola Tesla</title>
+    <title id="title">Nikola Tesla</title>
     <style>
+        .snow-background {
+            background-color: snow;
+        }
+        .font-color{
+            color: black;
+        }
+        .smaller-image {
+            width: 150px;
+        }
+        .thick-gray-border {
+            border-color: gray;
+            border-width: 5px;
+            border-style: solid;
+            border-radius: 10px;
+        }
         div{
             font-size: 10px;
         }
+        
     </style>
 </head>
-<body>
-    <h2>Nikolas Tesla</h2>
+<body class="snow-background font-color">
+    
     <main>
-        <img src="Nikola_Tesla_Colored.jpg" alt="Imagem do Cientista Nikola Tesla">
+        <h2>Nikolas Tesla</h2>
+        <div id="image-div">
+        <img class="smaller-image thick-gray-border "src="Nikola_Tesla_Colored.jpg" alt="Imagem do Cientista Nikola Tesla" id="image">
 
         
 
-        <div id="image-div">
+        
             <p id="img-caption"> Imagem de Nikola Tesla </p>
         </div>
         
         <p id="tribute-info">Nikola Tesla, foi um inventor, engenheiro eletrotécnico e engenheiro mecânico sérvio, mais conhecido por suas contribuições ao projeto do moderno sistema de fornecimento de eletricidade em corrente alternada (CA).</p>
 
-        <p>Algumas de suas principais invenções:</p>
+        <p>Algumas de suas principais invenções:
         <ul>
             <li>Ferramentas para transmições de corrente alternada para longas distâncias</li>
             <li>Motor a indução</li>
             <li>Sistema de ignição para carros</li>
             <li>Bobina Tesla</li>
         </ul>
-
-        <p> Aqui está o <a href="https://pt.wikipedia.org/wiki/Nikola_Tesla" target="_blank">o link da página do wikipedia</a> para conhecermos mais sobre ele.</p>
+        </p>
+        <p> Aqui está o <a href="https://pt.wikipedia.org/wiki/Nikola_Tesla" target="_blank">o link da página do wikipedia id="tribute-link"</a> para conhecermos mais sobre ele.</p>
     </main>
 </body>
 </html>
